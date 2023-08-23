@@ -7,8 +7,27 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <style>
+        @keyframes play {
+    from { 
+        background-position: 0px; 
+    }
+    to { 
+        background-position: -4000px; 
+    }
+}
+  
+        #walk {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background: url("image.png");
+    animation: play 0.8s steps(4) infinite; /* new line */
+}
+    </style>
 </head>
 <body>
     <p>git test</p>
+    <div id="walk"></div>
 </body>
 </html>
